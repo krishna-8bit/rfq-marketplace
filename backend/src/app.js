@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 
@@ -7,6 +8,7 @@ import quotationRoutes from "./routes/quotationRoutes.js";
 
 import errorMiddleware from "./middleware/errorMiddleware.js";
 
+dotenv.config();
 const app = express();
 
 const allowedOrigins = [
